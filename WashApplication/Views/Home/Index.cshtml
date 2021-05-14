@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Layout do cliente</h1>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Lista de servirços &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-4">
+                @Html.ActionLink("Lavagem", "CreateLavagem", new { id = "NovaLavagem" }, new { @class = "btn btn-primary btn-lg active" })
+            </div>
+        </div>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-4">
+                @Html.ActionLink("Novo Usuário", "CreateUsuario", new { id = "Novo Usuário" }, new { @class = "btn btn-success btn-lg active" })
+            </div>
+        </div>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-4">
+                @Html.ActionLink("Editar Usuário", "Edit", new { id = "Edita Usuário" }, new { @class = "btn btn-warning btn-lg active" })
+            </div>
+        </div>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+    </div>
+</div>
